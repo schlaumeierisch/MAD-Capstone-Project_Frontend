@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Vocability</string>
+
+    <!-- bottom navigation menu -->
+    <string name="title_home">Home</string>
+    <string name="title_add_flashcard">Add Flashcard</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- home fragment -->
+    <string name="title_vocability">Vocability - Home</string>
+    <string name="vocability_introduction">Welcome to the mobile application Vocability! Your helpful assistant to improve your language skills and vocabulary.\n\nOn this screen you can start your practical exercises - to do this, select your desired language and the corresponding difficulty level in the next steps.\n\nYou will also find an overview of your previous exercises and results.</string>
+    <string name="practice_button">Practice</string>
+    <string name="history_button">History</string>
+
+    <!-- add flashcard fragment -->
+    <string name="selected_language_label">Selected language</string>
+    <string name="selected_difficulty_label">Selected difficulty</string>
+    <string name="front_label">Front (word/phrase to be translated)</string>
+    <string name="back_label">Back (translated word/phrase)</string>
+    <string name="front">Front</string>
+    <string name="back">Back</string>
+    <string name="add_flashcard_button">Add Flashcard</string>
+
+    <!-- (advanced) settings fragment -->
+    <string name="add_language_button">Add Language</string>
+    <string name="delete_language_button">Delete Language</string>
+    <string name="delete_difficulty_button">Delete Difficulty Level</string>
+    <string name="language_settings">%1$s Settings</string>
+    <string name="no_difficulty_level_selected_toast">No difficulty level selected.</string>
+
+    <!-- item flashcard -->
+    <string name="item_flashcard_front_label">Front:</string>
+    <string name="item_flashcard_back_label">Back:</string>
+
+    <!-- confirmation dialog -->
+    <string name="confirmation_dialog_title_delete_language">Delete Language</string>
+    <string name="confirmation_dialog_title_delete_difficulty_level">Delete Difficulty Level</string>
+    <string name="confirmation_dialog_title_leave_session">Leave Session</string>
+    <string name="confirmation_dialog_title_delete_history_entries">Delete All History Entries</string>
+    <string name="confirmation_dialog_message_delete_language">Are you sure you want to delete language %1$s and all of its difficulty levels and flashcards?</string>
+    <string name="confirmation_dialog_message_delete_difficulty_level">Are you sure you want to delete difficulty level %1$s and all of its flashcards?</string>
+    <string name="confirmation_dialog_message_leave_session">Are you sure you want to leave your current practice session?</string>
+    <string name="confirmation_dialog_message_delete_history_entries">Are you sure you want to delete all history entries?</string>
+    <string name="confirmation_dialog_delete_button">Delete</string>
+    <string name="confirmation_dialog_leave_button">Leave</string>
+    <string name="confirmation_dialog_cancel_button">Cancel</string>
+
+    <!-- add difficulty level fragment -->
+    <string name="add_difficulty_level">Add Difficulty Level</string>
+    <string name="add_difficulty_level_introduction_title">Introduction</string>
+    <string name="add_difficulty_level_introduction">You are about to add a new difficulty level to a language. After doing this, you are able to create and assign new flashcards to your newly created difficulty level.</string>
+    <string name="add_difficulty_selected_language_title">Selected language</string>
+    <string name="difficulty_level_name">Difficulty level name</string>
+    <string name="add_difficulty_level_button">Add Difficulty Level</string>
+    <string name="fill_in_difficulty_level_name_toast">Fill in a difficulty level name</string>
+
+    <!-- add language fragment -->
+    <string name="add_language">Add Language</string>
+    <string name="add_language_introduction_title">Introduction</string>
+    <string name="add_language_introduction">You are about to add a new language. After doing this, you are able to create specific difficulty levels for this language and also create and assign new flashcards to these difficulty levels.</string>
+    <string name="language_name">Language name</string>
+    <string name="fill_in_language_name_toast">Fill in a language name</string>
+
+    <!-- add flashcard fragment -->
+    <string name="add_flashcard">Add Flashcard</string>
+    <string name="fill_in_front_and_back_toast">Fill in a front and back word/phrase</string>
+    <string name="add_flashcard_success_toast">New flashcard successfully added</string>
+
+    <!-- practice fragment (with select language & difficulty level fragment) -->
+    <string name="select_language">Select Language</string>
+    <string name="select_difficulty_level">Select Difficulty Level</string>
+    <string name="no_flashcards_toast">Selected difficulty level does not contain any flashcards.</string>
+    <string name="practice_title">%1$s - %2$s</string>
+    <string name="flashcard_counter">Flashcard %1$d/%2$d</string>
+    <string name="front_word_phrase">Front word/phrase</string>
+    <string name="back_word_phrase">Back word/phrase</string>
+    <string name="correct_translation_message">Good job! This is the correct translation!</string>
+    <string name="correct_translation_title">Correct!</string>
+    <string name="incorrect_translation_message">The correct translation would be %1$s.</string>
+    <string name="incorrect_translation_title">Incorrect!</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="next_button">Next</string>
+    <string name="check_button">Check</string>
+    <string name="finish_button">Finish</string>
+    <string name="fill_in_back_word_phrase_toast">Fill in a back word/phrase</string>
+
+    <!-- practice summary fragment -->
+    <string name="practice_summary">Practice Summary</string>
+    <string name="language_label">Language</string>
+    <string name="difficulty_level_label">Difficulty Level</string>
+    <string name="date_time_label"><![CDATA[Date & Time]]></string>
+    <string name="correct_answers_label">Correct Answers</string>
+    <string name="home_button">Home</string>
+
+    <!-- history fragment -->
+    <string name="history">History</string>
+    <string name="delete_all_entries">Delete All Entries</string>
+
+    <!-- item history entry -->
+    <string name="item_history_entry_language_label">Language:</string>
+    <string name="item_history_entry_difficulty_level_label">Difficulty Level:</string>
+    <string name="item_history_entry_correct_answers_label">Correct Answers:</string>
+    <string name="item_history_entry_correct_answers">%1$s/%2$s (%3$d %%)</string>
+    <string name="item_history_entry_date_label">Date:</string>
+</resources>

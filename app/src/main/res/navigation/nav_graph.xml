@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="nl.hva.frontend.ui.settings.LanguageSettingsFragment"
+        android:label="fragment_settings_advanced"
+        tools:layout="@layout/fragment_difficulty_level_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_settingsAdvancedFragment"
+            app:destination="@id/settingsAdvancedFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_addLanguageFragment"
+            app:destination="@id/addLanguageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsAdvancedFragment"
+        android:name="nl.hva.frontend.ui.settings.DifficultyLevelSettingsFragment"
+        android:label="SettingsAdvancedFragment" >
+        <action
+            android:id="@+id/action_settingsAdvancedFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_settingsAdvancedFragment_to_addDifficultyLevelFragment"
+            app:destination="@id/addDifficultyLevelFragment" />
+        <action
+            android:id="@+id/action_settingsAdvancedFragment_to_addFlashcardFragment"
+            app:destination="@id/addFlashcardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="nl.hva.frontend.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_selectLanguageFragment"
+            app:destination="@id/selectLanguageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFlashcardFragment"
+        android:name="nl.hva.frontend.ui.settings.AddFlashcardFragment"
+        android:label="fragment_add_flashcard"
+        tools:layout="@layout/fragment_add_flashcard" >
+        <action
+            android:id="@+id/action_addFlashcardFragment_to_settingsAdvancedFragment"
+            app:destination="@id/settingsAdvancedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDifficultyLevelFragment"
+        android:name="nl.hva.frontend.ui.settings.AddDifficultyLevelFragment"
+        android:label="AddDifficultyLevelFragment" >
+        <action
+            android:id="@+id/action_addDifficultyLevelFragment_to_settingsAdvancedFragment"
+            app:destination="@id/settingsAdvancedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLanguageFragment"
+        android:name="nl.hva.frontend.ui.settings.AddLanguageFragment"
+        android:label="AddLanguageFragment" >
+        <action
+            android:id="@+id/action_addLanguageFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectLanguageFragment"
+        android:name="nl.hva.frontend.ui.practice.SelectLanguageFragment"
+        android:label="SelectLanguageFragment" >
+        <action
+            android:id="@+id/action_selectLanguageFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_selectLanguageFragment_to_selectDifficultyLevelFragment"
+            app:destination="@id/selectDifficultyLevelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDifficultyLevelFragment"
+        android:name="nl.hva.frontend.ui.practice.SelectDifficultyLevelFragment"
+        android:label="SelectDifficultyLevelFragment" >
+        <action
+            android:id="@+id/action_selectDifficultyLevelFragment_to_selectLanguageFragment"
+            app:destination="@id/selectLanguageFragment" />
+        <action
+            android:id="@+id/action_selectDifficultyLevelFragment_to_practiceFragment"
+            app:destination="@id/practiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/practiceFragment"
+        android:name="nl.hva.frontend.ui.practice.PracticeFragment"
+        android:label="PracticeFragment" >
+        <action
+            android:id="@+id/action_practiceFragment_to_practiceSummaryFragment"
+            app:destination="@id/practiceSummaryFragment" />
+        <action
+            android:id="@+id/action_practiceFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/practiceSummaryFragment"
+        android:name="nl.hva.frontend.ui.practice.PracticeSummaryFragment"
+        android:label="PracticeSummaryFragment" >
+        <action
+            android:id="@+id/action_practiceSummaryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="nl.hva.frontend.ui.history.HistoryFragment"
+        android:label="HistoryFragment" >
+        <action
+            android:id="@+id/action_historyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
